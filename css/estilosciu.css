@@ -1,0 +1,241 @@
+/*General Sty1e*/
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background:url("../img/deco/back.gif");/*center no-repeat fixed gray*/
+	background-size:cover;
+}
+/*Comienza Header*/
+
+div#header{
+	width: 100%;
+	min-width: 250px;
+	height: auto;
+	text-align: center;
+	display: inline-block;
+	/*border: 1px solid black;*/
+	overflow: hidden;
+}
+/*comienza menu*/
+
+/*MENU*/
+
+ul#menu{
+	position: absolute;
+	top:0px;/*OK*/
+	width: 100%;/*OK*/
+	background: url("../img/deco/fondomenu1.png");
+	padding-left: 0px;/*OK*/
+	list-style: none;/*OK*/
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+	/*border: 2px solid white;*/
+	margin: 0px;
+
+}
+
+ul#menu li{
+	float: left;/*OK*/
+	width: 20%;/*OK*/
+}
+
+
+ul#menu li a{
+	text-decoration: none;/*OK*/
+	display: block;/*OK*/
+	padding: 8px;/*OK*/
+	color:#CCFFFF;/*OK*/
+	font-family: 'Poiret One', serif;/*OK*/
+}
+
+ul#menu li a:hover{
+	background: url("../img/deco/fondomenu2.png");
+
+}
+
+
+/*Sub-menu*/
+
+ul#submenu{
+	position: absolute;
+	right: 0px;
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+	background-color: gray;
+	/*background: url("../img/deco/fondomenu2.png");*/
+	z-index: 10;
+}
+
+ul#submenu li{
+	list-style: none;
+	text-decoration: none;
+	width: 100%;
+}
+
+ul#submenu li a{
+	display: inherit;
+	padding: 8px;
+	color:#CCFFFF;
+	font-family: 'Poiret One', serif;
+}
+
+li:hover ul#submenu{
+				visibility: visible;
+
+}
+
+ul#submenu li a:hover{
+	color: yellow;
+}
+
+/*Fin del Header*/
+
+/*COMIENZA CONTENT*/
+
+div#content{
+	width: 100%;
+	text-align: center;
+	padding: 50px 0px 50px 0px;
+}
+
+div.marco{
+	width: 90%;
+	background: url("../img/deco/fondomenu1.png");
+	border-radius: 20px;
+	display: inline-block;
+	text-align: inherit;
+	padding: 25px;
+	color: #CCFFFF;
+}
+
+h3{
+font-family: 'Mukta Vaani', sans-serif;
+}
+
+div.marco:hover{
+	background: url("../img/deco/fondomenu2.png");
+	cursor: default;
+}
+
+p   {
+	text-align: justify;
+	font-size: 16px;
+	font-family: 'Poiret One', serif;
+
+}
+
+div#barraresp img{display: none;}
+
+/*FIN CONTENIDO*/
+
+/*COMIENZO FOOTER*/
+
+div#footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 90px;
+	margin: 20px 0px 0px 0px;
+	background: url("../img/deco/fondomenu1.png");
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+	overflow: hidden;
+
+}
+
+div#footer p{ 
+			text-align: center;
+			color: #CCFFFF;
+			}
+
+div#footer:hover{
+	background: url("../img/deco/fondomenu2.png");
+}
+
+/*FIN COMIENZO FOOTER*/
+
+/*Comienza medias Querries*/
+
+@media screen and (min-width:1030px){
+	div#wrapper{
+	position: relative;  
+	width: 1024px;
+	height: 768px; 
+	margin: 0 auto;
+	overflow: hidden;/*Cuando se definan mas elementos en el content la opción cerrar será visible, para
+	 demostrarlo se define un logo mas con display block, entonces se puede apreciar que la opcion cerrar 
+	 del menu se visualiza correctamente. Estos estilos se bdeberán colocar en un @media querry para 
+	 dimensiones superiores a 1024px de lo contrario al definir un ancho fijo se quita la posibilidad responsiva.
+	 Si se define 1024 aprarece scrollX*/
+}
+
+}
+
+/*Menu*/
+
+@media screen and (max-width:500px){
+
+	ul#menu li.inpar{
+		width: 100%;/*OK*/
+	}
+
+	ul#menu li{
+	width: 50%;
+	text-align: center;
+}
+
+ul#menu li{
+	background-color: gray;
+}
+
+div#barraresp{	
+				position: absolute;
+				top: 0px;
+				width: 100%;
+				height: auto;
+				background: url("../img/deco/fondomenu1.png");
+				border-top: 1px solid silver;
+				border-bottom: 1px solid silver;
+
+			}
+
+div#barraresp img   {display: inline;
+				border: none;
+				}
+
+div#menuresp{display: inline;
+				}				
+
+ul#menu{display: none;}
+
+
+div#menuresp:hover ul#menu{
+				
+				display: block;
+				position: relative;
+				}
+
+	div#footer{
+	position: relative;
+	margin: 0px;
+}
+
+div.marco{width: 80%;}
+
+}
+
+@media screen and (max-width:330px){
+
+
+	ul#menu li.inpar{
+		width: 100%;
+	}
+
+	ul#menu li{
+	width: 100%;
+	text-align: center;
+}
+
+}
