@@ -1,0 +1,10 @@
+nodoImg=document.getElementsByTagName("a");
+nodoImg[1].setAttribute("data-lightbox", "roadtrip");
+nodoImg[2].setAttribute("data-lightbox", "roadtrip");
+nodoImg[3].setAttribute("data-lightbox", "roadtrip");
+nodoImg[4].setAttribute("data-lightbox", "roadtrip");
+nodoImg[5].setAttribute("data-lightbox", "roadtrip");
+nodoImg[6].setAttribute("data-lightbox", "roadtrip");
+nodoImg[7].setAttribute("data-lightbox", "roadtrip");
+nodoImg[8].setAttribute("data-lightbox", "roadtrip");
+nodoImg[9].setAttribute("data-lightbox", "roadtrip");
