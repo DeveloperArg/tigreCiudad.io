@@ -1,0 +1,888 @@
+/*General Sty1e*/
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: gray;
+	/*background:url("../img/jardinMuseoDeArteTig.jpg") no-repeat center fixed;
+	background-size: cover!important;
+	min-height:100%;*/
+	
+}
+
+div#wrapper{
+	min-width: 250px;
+
+}
+
+#capaFondo{
+	/*border: 1px solid silver; /*Quitando esta propiedad se logra no ver el border definido por para la definicion del DIV contenedor*/
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -10;
+	background-position: center!important; 
+	background-repeat: no-repeat!important; 
+	background-attachment: fixed!important;
+	background: url('../img/museo-de-arte-tigre-jardin.jpg') no-repeat center fixed;
+	background-size:cover!important;
+}
+
+
+p.noscript{
+	font-family: 'Poiret One', serif;
+	font-size: 20px; 
+	background-color: #FF9;
+	margin:0px;
+	padding-top: 100px; 
+	text-align: center; 
+	vertical-align: middle!important; 
+	width: 300px; 
+	height: 250px; 
+	position: fixed;
+	top:50%; 
+	left: 50%; 
+	margin-top: -125px; 
+	margin-left: -150px; 
+	z-index: 20;
+	
+}
+
+/*Comienza Header*/
+
+div#header{
+	width: 100%;
+	min-width: 250px;
+	height: auto;
+	text-align: center;
+	display: inline-block;
+	overflow: hidden;
+}
+
+
+div#logo{
+	width: 330px;
+	height: auto;
+	text-align: left;
+	vertical-align: top;/*PROBANDO*/
+	/*padding-left: 10px;*/
+	display: inherit;
+	/*border:1px solid black;*/
+	margin: 10px auto;
+	
+}
+
+img.logo{
+	/*box-shadow: 0 0 10px #333333, 1px 1px 200px #bcbcbc inset;*/
+	width: 220px;
+	/*height: 155px;*/
+}
+
+div#bloqueone{
+	width: 330px;
+	height: auto;
+	text-align: inherit;
+	display: inherit;
+	/*border: 1px solid black;*/
+	margin: 10px auto;
+}
+
+div#fecha{
+	width: 237px;
+	height: auto;/*30px para insertar script se cambia a auto*/
+	/*border: 1px solid silver;*/
+	text-align: inherit;
+	margin-bottom: 18px;
+	display: inherit;
+	background: url("../img/deco/fondomenu1.png");
+	color: #CCFFFF;
+	font-family: Verdana, serif;
+	/*Se cambia:'Poiret One' por otra tipografía*/
+	
+}
+
+span{
+	font-family: Verdana, serif;/*'Poiret One', serif*/
+}
+
+div.tiempo{
+	width: 237px;/*El contenido del script de tiempo justifica por defecto (arriba a la izquierda) por lo tanto, si se obliga a cubrir un ancho definido a su contenedor, su contenido no quedará centrado, dado que aplicará los estilos definidos desde el script*/
+	height: 92px!important;             
+	text-align: inherit;
+	display: inherit;
+	/*border: 1px solid silver;*/
+	background:url("../img/deco/fondomenu1.png");
+
+}
+
+/*div.capa{
+	position: relative;
+	bottom: 0px;
+	width: 237px;
+	height: 92px!important;
+	display: inline-block;
+	border: 1px solid orange;
+	z-index: 100;
+	overflow: hidden;
+
+
+}*/
+
+
+
+/*div#capa{
+	Definir desde JavaScript par evitar ensuciar código
+}*/
+
+div#rsociales{
+	width: 330px;
+	height: auto;
+	display: inherit;
+	text-align: right;
+	/*border: 1px solid black;*/
+	vertical-align: top;
+	margin: 10px auto;
+
+	
+	
+}
+
+div#rsociales a img{
+	border:none;
+	vertical-align: middle;
+}
+
+img.whm{
+	width: 65px;
+	height: auto;
+}
+
+/*.idiomas{
+	width: 33px;
+	height: 33px;
+}*/
+
+.redes{
+	width: 33px;
+	height: 33px;
+}
+
+span.textBarra{
+	font-family: Pristina, cursive;
+	font-weight: bold; 
+	color: white;
+	font-size: 30px; 
+	color: #CCFFFF;
+	visibility: hidden;
+}
+
+
+/*comienza menu*/
+
+/*MENU*/
+
+ul#menu{
+	position: absolute;/*OK*/
+	width: 100%;/*OK*/
+	background: url("../img/deco/fondomenu1.png");
+	padding-left: 0px;/*OK*/
+	list-style: none;/*OK*/
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+	/*border: 2px solid white;*/
+	margin: 0px;
+	/*display: block;*/
+	visibility: visible!important;
+
+
+}
+
+ul#menu li{
+	float: left;/*OK*/
+	width: 20%;/*OK*/
+	
+}
+
+
+ul#menu li a{
+	text-decoration: none;/*OK*/
+	display: block;/*OK*/
+	padding: 8px;/*OK*/
+	color:#CCFFFF;/*OK*/
+	font-family: 'Poiret One', serif;/*OK*/
+	/*font-weight: bolder;*/
+
+
+	}
+
+
+ul#menu li a:hover{
+	background: url("../img/deco/fondomenu2.png");
+
+}
+
+span.elementLink{
+	display: block;
+	padding: 8px;
+	color: #CCFFFF;
+	font-family: 'Poiret One', serif;
+	/*font-weight: bolder;*/
+	cursor: pointer;
+
+	}
+	span.elementLink:hover{
+	background: url("../img/deco/fondomenu2.png");
+	
+}
+
+@media screen and (min-width:500px){
+				ul#menu{
+						display: block;
+						visibility: hidden;
+						}
+				}
+
+
+/*Sub-menu*/
+
+ul#submenu{
+	position: absolute;
+	right: 0px;
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+	background-color: gray;
+	/*background: url("../img/deco/transnegra.png");*/
+	z-index: 10;
+}
+
+ul#submenu li{
+	list-style: none;
+	text-decoration: none;
+	width: 100%;
+}
+
+ul#submenu li a{
+	display: inherit;
+	padding: 8px;
+	color:#CCFFFF;
+	font-family: 'Poiret One', serif;
+}
+
+li:hover ul#submenu{
+				visibility: visible;
+
+}
+
+ul#submenu li a:hover{
+	color: yellow;
+}
+
+
+/*Fin del Header*/
+
+/*COMIENZA CONTENT*/
+
+div#content{
+	width: 100%;
+	text-align: center;
+}
+
+
+div#museo, div#paseos, div#recreos, div#puerto, div.ciudad, div#ubicacion, div#twitcont{
+	width: 90%;
+	background: url("../img/deco/fondomenu1.png");
+	border-radius: 20px;
+	margin-top: 45px;
+	display: inline-block;
+	text-align: inherit;
+	padding: 24px 20px 24px 20px;
+	color: #CCFFFF;
+}
+
+div#twitcont{
+	background: url("../img/deco/rectWhite125A.png");/*si no hay contraste cambiar por rect140.png*/
+	overflow: hidden;
+	height: auto;
+
+
+
+}
+
+h1, h2{
+font-family: 'Mukta Vaani', sans-serif;
+}
+
+div#paseos:hover, div#museo:hover, div#recreos:hover, div#puerto:hover, div.ciudad:hover, div#ubicacion:hover{
+	background: url("../img/deco/fondomenu2.png");
+	cursor: default;
+	/*box-shadow: 0 0 10px silver, 1px 1px 200px #bcbcbc inset;*/
+}
+
+
+
+
+img.fotos{
+		width: 150px;
+		height: 113px;
+		float: left;
+		margin: 0px 10px 10px 0px; 
+		box-shadow: 0 0 10px #333333, 1px 1px 200px #bcbcbc inset;
+		}
+
+p   {
+	text-align: justify;
+	font-size: 16px;
+	font-weight: bolder;
+	font-family: 'Poiret One', serif;
+	
+}
+
+a.view{
+	float: right;
+	margin: 10px;
+	font-family: Arial, Tahoma, Verdana, sans-serif; 
+	font-size:14px;
+	color: white;
+	text-decoration: none;
+}
+
+div#barraresp img{display: none;}
+
+iframe{
+	border:none;
+	width: 100%;
+	height: 490px;
+	border-radius: 15px;
+	margin: 0px;
+}
+
+/*FIN CONTENIDO*/
+
+/*COMIENZO FOOTER*/
+
+div#footer{
+	width: 100%;
+	height: 170px;
+	margin: 20px 0px 0px 0px;
+	background: url("../img/deco/fondomenu1.png");
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+	overflow: hidden;
+
+}
+
+div#footer p{ 
+			text-align: center;
+			color: #CCFFFF;
+			}
+
+div#footer:hover{
+	background: url("../img/deco/fondomenu2.png");
+}
+
+/*FIN COMIENZO FOOTER*/
+
+
+/*MEDIAS QUERRIES*/
+
+@media screen and (max-width:1015px){
+	div#rsociales{
+		text-align: center;
+	}
+
+	div#logo{
+						text-align: center;
+					}
+}
+
+
+@media screen and (max-width: 700px){
+
+					div#logo{
+						width: 240px;
+						text-align: left;
+						
+					}
+					div#bloqueone{
+						width: 240px;
+					}
+
+}
+
+@media screen and (max-width:350px){
+						
+					div#rsociales{
+						width: 250px;
+					}
+					img.fotos{
+								float: none;
+								margin: 0px 10px; 	
+							}
+
+
+}
+
+@media screen and (min-width:1030px){
+	div#wrapper{
+	position: relative;  
+	width: 1024px;
+	height: auto; 
+	margin: 0 auto;
+	overflow: hidden;
+	/*Cuando se definan mas elementos en el content la opción cerrar será visible, para
+	 demostrarlo se define un logo mas con display block, entonces se puede apreciar que la opcion cerrar 
+	 del menu se visualiza correctamente. Estos estilos se bdeberán colocar en un @media querry para 
+	 dimensiones superiores a 1024px de lo contrario al definir un ancho fijo se quita la posibilidad responsiva.
+	 Si se define 1024 aprarece scrollX*/
+}
+div.terminos{
+	width: 800px!important;
+	height: 500px!important;
+	position: absolute!important;
+	top: 50%!important;
+	left: 50%!important;
+	margin-top: -250px!important;
+	margin-left: -400px!important;
+	background: url("../img/deco/transp200.png");
+	overflow-y: scroll;
+	padding: 10px 5px 10px 10px;
+	z-index: 100;
+
+}
+
+
+/*body{
+	background:url("../img/jardinMuseoDeArteTigre.jpg") center fixed silver;
+
+	/*se quita la propiedad no-repeat (y el tag a body era html) para probar funcionamiento
+	background-size: cover;
+}*/
+
+}
+
+/*Menu*/
+
+@media screen and (min-width:500px){
+		ul#menu{
+			display: block;
+			visibility: hidden;
+				}
+		}
+
+@media screen and (max-width:500px){
+
+	ul#menu li.inpar{
+		width: 100%;/*OK*/
+	}
+
+	ul#menu li{
+	width: 50%;
+	text-align: center;
+}
+
+div#museo, div#paseos, div#recreos, div#puerto, div.ciudad, div#ubicacion, div#twitcont{
+																			margin-top: 15px;
+																			margin-bottom: 20px;
+																			padding: 10px;
+																		}																		
+
+
+div#logo{display: none;}
+
+
+/*Menú responsivo*/
+
+
+div#barraresp{
+				position: fixed;
+				top: 0px;
+				width: 100%;
+				min-width: 200px;
+				height: auto;
+				background: url("../img/deco/fondomenu2.png")!important;
+				border-top: 1px solid silver;
+				border-bottom: 1px solid silver;
+				background-color: lightgray; 
+				z-index: 11;
+			}
+
+			span.textBarra{
+				visibility: visible;
+			}
+
+div#barraresp img   {
+					display: inline;
+					border: none ;
+					vertical-align: middle;
+					padding: 2px;
+				}
+
+div#barraresp span.point img{
+						cursor: pointer;
+						/*border: ;*/
+						/*padding: 0px;*/
+	
+}
+
+/*span.text{padding-left: 23px;}
+
+div#barraresp img.va{
+	padding-bottom: 12px;
+}*/
+
+
+
+
+div#menuresp{	display: inline;
+
+				}				
+
+ul#menu{display: none;}
+
+div#menuresp ul#menu{
+				background-color: gray;}
+
+div#menuresp:hover ul#menu{
+				
+				display: block;
+				
+	}
+
+div#bloqueone{
+	margin-top: 70px;
+	}
+
+
+}
+	
+
+
+/*NOTA: Si se utiliza la propiedad DISPLAY:NONE; para visualizar nuevamente el elemento se deberá utilizar la 
+propiedad DISPLAY: BLOCK o INLINE; Esta propiedad no deja reservado el lugar definido previamente para el elemento.
+
+En cambio si se utiliza la propiedad VISIBILITY:HIDDEN; para visualizar nuevamente el elemento se deberá utilizar la 
+propiedad VISIBILITY:VISIBLE; Esta propiedad sí deja reservado el lugar definido previamente para el elemento.*/
+
+
+/*Fin Menú responsivo*/
+
+
+
+@media screen and (max-width:330px){
+
+
+	ul#menu li.inpar{
+		width: 100%;
+	}
+
+	ul#menu li{
+	width: 100%;
+	text-align: center;
+}
+
+	div#footer{
+		height: 220px;
+	}
+
+}
+
+
+
+/*TWITTER*/
+a.twitter-timeline {
+  /* Buttonish */
+  display: inline-block;
+  padding: 6px 12px 6px 30px;
+  margin: 10px 0;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzIgNzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcyIDcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjAiIGZpbGw9Im5vbmUiIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiIvPg0KPHBhdGggZmlsbD0iIzU1YWNlZSIgZD0iTTY4LjgxMiwxNS4xNDFjLTIuMzQ4LDEuMDM5LTQuODY5LDEuNzQzLTcuNTE5LDIuMDZjMi43MDMtMS42Miw0Ljc3OC00LjE4Nyw1Ljc1Ni03LjI0NGMtMi41MjksMS41LTUuMzMsMi41OTItOC4zMTMsMy4xNzYNCglDNTYuMzQ5LDEwLjU5MSw1Mi45NDgsOSw0OS4xODIsOWMtNy4yMjksMC0xMy4wOTIsNS44NjEtMTMuMDkyLDEzLjA5M2MwLDEuMDI2LDAuMTE4LDIuMDIxLDAuMzM4LDIuOTgxDQoJYy0xMC44ODUtMC41NDgtMjAuNTI4LTUuNzU3LTI2Ljk4Ny0xMy42NzljLTEuMTI2LDEuOTM2LTEuNzcxLDQuMTg0LTEuNzcxLDYuNTgxYzAsNC41NDIsMi4zMTIsOC41NTEsNS44MjQsMTAuODk4DQoJYy0yLjE0Ni0wLjA2OS00LjE2NS0wLjY1Ny01LjkzLTEuNjM4Yy0wLjAwMiwwLjA1NS0wLjAwMiwwLjExLTAuMDAyLDAuMTYyYzAsNi4zNDUsNC41MTMsMTEuNjM4LDEwLjUwNCwxMi44NA0KCWMtMS4xMDEsMC4yOTgtMi4yNTYsMC40NTctMy40NDksMC40NTdjLTAuODQ2LDAtMS42NjctMC4wNzgtMi40NjUtMC4yMzFjMS42NjcsNS4yLDYuNDk5LDguOTg2LDEyLjIzLDkuMDkNCgljLTQuNDgyLDMuNTEyLTEwLjEyOSw1LjYwNi0xNi4yNiw1LjYwNmMtMS4wNTUsMC0yLjA5Ni0wLjA2MS0zLjEyMi0wLjE4NGM1Ljc5NCwzLjcxNywxMi42NzYsNS44ODIsMjAuMDY3LDUuODgyDQoJYzI0LjA4MywwLDM3LjI1MS0xOS45NDksMzcuMjUxLTM3LjI0OWMwLTAuNTY2LTAuMDE0LTEuMTM0LTAuMDM5LTEuNjk0QzY0LjgzOCwyMC4wNjgsNjcuMDU4LDE3Ljc2NSw2OC44MTIsMTUuMTQxeiIvPg0KPC9zdmc+DQo=") 8px 8px no-repeat;
+  background-size: 1em 1em;
+  
+
+
+  /* Text */
+  font: normal 12px/18px Helvetica, Arial, sans-serif;
+  color: #333;
+  white-space: nowrap;
+}
+
+a.twitter-timeline:hover,
+a.twitter-timeline:focus {
+  background-color: #dedede;
+}
+
+/* Color Highlight for keyboard navigation */
+
+a.twitter-timeline:focus {
+  outline: none;
+  border-color: #0089cb;
+}
+
+/*Formulario de Contacto*/
+
+div.contact{	display: inline-block;
+				height: auto;
+				overflow: hidden;
+				/*border: 1px solid orange;
+				margin: 0px;*/
+				vertical-align: middle;
+				margin: 10px;
+			}
+
+			div#contacto{
+				vertical-align: middle;
+
+			}
+
+			/*@media screen and (max-width: 637px){
+
+			div#contacto{
+				margin-top: 50px;
+
+			}
+
+		}*/
+
+fieldset{	color: black;
+			font-family: normal, Helvetica, Arial, sans-serif;/*'Poiret One', serif;*/
+			padding: 5px;
+			margin: 10px;
+					}
+					
+				label{
+					width: 100%;
+					float: left;
+
+				}
+
+				fieldset{	border: none;
+						}
+
+				legend{		width: 50%;
+							position: relative;
+							text-align: center;
+							font-size: 20px;
+						}
+
+			
+					
+input, textarea{	background: transparent;
+					background: url("../img/deco/fondomenu2.png");
+					border: none;
+					margin: 10px;
+					padding: 5px;
+					width: 200px;
+					height: 25px;
+					vertical-align: middle;
+					color: white;
+					
+				}
+
+				@media screen and (max-width: 300px){
+					input, textarea{
+						width: 150px;
+					}
+				}
+
+				textarea{
+					height: 50px;
+
+				}
+
+				input:focus, textarea:focus{
+					background: url("../img/deco/fondomenu1.png");
+					color: white;
+				}
+
+				.specialinput{
+					width: 95px;
+					height: 25px;
+					color: white;
+					font-family: 'Poiret One', serif;
+					padding: 5px;   
+				}
+
+				@media screen and (max-width: 425px){
+
+					.specialinput{
+						float: none;
+						text-align: center;
+					}
+
+					.contact{
+						border: none!important;
+					}
+				
+			}
+
+
+/*Estilos Validadores*/
+div.validadores {
+				overflow: hidden;
+				text-align: center;
+				margin:10px;}
+
+div.validadores img{
+	width: 88px;
+	height: 31px;
+}
+
+
+
+
+
+
+/*Área Términos*/
+/*				
+div#content{
+	width: 100%;
+	text-align: center;
+}
+
+div.contenedor{
+	width: 90%;
+	height: auto;
+	background: url("../img/deco/rectWhite125A.png");
+	border-radius: 20px;
+	margin-top: 45px;
+	display: inline-block;
+	text-align: inherit;
+	padding: 28px;
+	overflow: hidden;
+	
+}
+
+div.terminos{
+	width: 100%;
+	height: 490px;
+	padding: 10px;
+	background: url("../img/deco/fondomenu2.png");
+	overflow-y: scroll;
+}
+
+div.terminos h1{
+	text-decoration: underline;
+}
+
+
+@media screen and (max-width:500px){
+	div.contenedor{margin-top: 15px;
+		margin-bottom: 20px;
+		padding: 10px;
+
+				}
+
+}*/
+
+div#contenedor{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: url("../img/deco/fondomenu2.png");
+	visibility: hidden;
+	z-index: 100;
+}
+
+div.terminos{
+	width: 80%;
+	height: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -225px;
+	margin-left: -40%;
+	background: url("../img/deco/transp200.png");
+	overflow-y: scroll;
+	padding: 10px 5px 10px 10px;
+}
+
+
+div.terminos span#cerrar{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	}
+
+	
+
+@media screen and (max-height:500px){
+	div.terminos{
+
+	width: 80%;
+	height: 250px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -40%;
+		
+	}
+
+}
+
+@media screen and (max-height:350px){
+	div.terminos{
+
+	width: 80%;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -40%;
+		
+	}
+
+}
+
+
+
+div.terminos h1{
+	text-decoration: underline;
+	font-family: 'Poiret One', serif;
+	font-weight: normal;
+}
+
+div.terminos p{
+	font-family: 'Inconsolata', monospace;
+	font-weight: normal;
+}
+
+/*Estilos p/Autor*/
+
+a#autor{
+	float: right;
+	text-decoration: none;
+	text-align: center;
+	margin: 5px;
+	margin-right: 50px!important;
+
+}
+
+a#autor span{
+	font-size: 12px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	line-height:  1.5em;
+	overflow: hidden;
+
+}
+
+a#autor {
+		margin-bottom: 500px;
+		}
+
+a{text-decoration: none;}
+
+a span{
+	font-size: 12px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
