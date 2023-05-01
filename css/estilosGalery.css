@@ -1,0 +1,271 @@
+body{
+	margin: 0;
+	padding: 0;
+	/*background:url('../img/deco/fondolightBox.png')no-repeat center fixed;*/
+	background: url("../img/deco/fondomenu2.png") ;
+}
+
+div#wrapper, div#barraresp{
+	min-width: 250px;
+}
+
+
+div.contenido{
+	width:100%;
+	margin-top: 10px;
+}
+	
+
+div#barraresp, div .contenido{
+	text-align: center;
+	display: inline-block;
+}
+
+ .posicionOne, .posicionTwo, .posicionThree, .posicionFour, .posicionFive, .posicionSix, .posicionSeven, .posicionEight, .posicionNine{
+	text-align: center;
+	display: inline-block;
+	margin: 7px;
+}
+
+
+
+
+div.contenido img{
+	width: 200px;
+	height: 150px;
+	border: none;
+	margin:5px;
+}
+div.contenido a, div.contenido img:hover{
+	opacity: 1;
+	box-shadow: 0 0 20px #333333;
+	display: inline-block;
+}
+
+div.posicionOne:hover, 
+div.posicionTwo:hover, 
+div.posicionThree:hover, 
+div.posicionFour:hover, 
+div.posicionFive:hover, 
+div.posicionSix:hover, 
+div.posicionSeven:hover, 
+div.posicionEight:hover, 
+div.posicionNine:hover{
+	z-index: 1000;
+}
+
+
+div.contenido img{
+					opacity: 1;
+				}
+
+/*/////////*/
+
+/*comienza menu*/
+
+
+span.elementLink{
+	display: block;
+	padding: 8px;
+	color: #CCFFFF;
+	font-family: 'Poiret One', serif;
+	cursor: pointer;
+
+	}
+	span.elementLink:hover{
+	background: url("../img/deco/fondomenu2.png");
+	
+}
+
+
+div#barraresp img{display: block;}
+
+
+
+/*Menú responsivo*/
+
+
+div#barraresp{	
+				position: relative;
+				top: 0px;
+				width: 100%;
+				height: auto;
+				background: url("../img/deco/fondomenu1.png");
+				border-top: 1px solid silver;
+				border-bottom: 1px solid silver;
+				background-color: lightgray; 
+				z-index: 11;
+			}
+
+div#barraresp img   {
+					display: inline;
+					border: none ;
+					vertical-align: middle;
+					padding: 2px;
+				}
+
+div#barraresp a.point img{
+						cursor: pointer;
+	
+}
+
+/*span.text{padding-left: 23px;}*/
+
+div#barraresp img.va{
+	padding-bottom: 12px;
+}
+
+span.textBarra{
+	font-family: Pristina, cursive;
+	font-weight: bold; 
+	color: white;
+	font-size: 30px; 
+	color: #CCFFFF;
+	/*visibility: hidden;*/
+}
+
+img.whm{
+	width: 65px;
+	height: auto;
+}
+
+/*Fin menu resp*/
+
+/*COMIENZO FOOTER*/
+
+div#footer{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	bottom: 0px;
+	margin: 20px 0px 0px 0px;
+	background: url("../img/deco/fondomenu1.png");
+	border-top:1px solid silver;
+	border-bottom:1px solid silver;
+	display: block;
+	
+
+}
+
+div#footer p{ 
+			text-align: center;
+			color: #CCFFFF;
+			font-size: 16px;
+			font-family: 'Poiret One', serif;
+			}
+
+div#footer{
+	background: url("../img/deco/fondomenu2.png");
+}
+
+/*FIN COMIENZO FOOTER*/
+
+
+/*/////////*/
+@media screen and (min-width:580px) and (min-height: 550px){
+
+div.posicionOne{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -100px;
+	z-index: 15;
+}
+
+
+div.posicionTwo{
+	position: absolute;
+	bottom: 50%;
+	right: 50%;
+	z-index: 14;
+}
+
+div.posicionThree{
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	z-index: 13;
+}
+
+div.posicionFour{
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	z-index: 12;
+}
+
+div.posicionFive{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 11;
+}
+
+div.posicionSix{
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-bottom: 60px;
+	z-index: 10;
+}
+
+div.posicionSeven{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 60px;
+	margin-left: -100px;
+	z-index: 9;
+}
+
+div.posicionEight{
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-top: -75px;
+	margin-right: 70px;
+	z-index: 8;
+}
+
+div.posicionNine{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: 70px;
+	z-index: 7;
+}
+div#footer{
+	position: absolute;
+}
+
+div.contenido img{
+	opacity: 0.7;
+	}
+
+}
+
+@media screen and (min-width: 1300px){
+	div#wrapper{
+	position: absolute;  
+	width: 1030px;
+	height: 650px; 
+	top: 50%;
+	left: 50%;
+	margin-top: -325px;
+	margin-left: -515px;
+	border: 1px solid silver;
+	box-shadow: 0 0 15px  #333333;
+	overflow: hidden;
+}
+	div#barraresp{
+		position: relative;
+	}
+
+	
+
+}
+
+
